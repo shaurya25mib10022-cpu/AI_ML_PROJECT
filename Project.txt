@@ -1,8 +1,7 @@
 PROJECT REPORT: PhishGuard
 Course: AI & Machine Learning Fundamentals 
-Student Name: Akash Kumar Gautam
-Registration No. : 25BAI1****
-Date: March 30, 2026. 
+Student Name: Shaurya Srivastava 
+Registration No. : 25MIB10022
 
 
 Introduction & Problem Statement
