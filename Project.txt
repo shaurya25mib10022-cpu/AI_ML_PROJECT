@@ -1,0 +1,63 @@
+PROJECT REPORT: PhishGuard
+Course: AI & Machine Learning Fundamentals 
+Student Name: Akash Kumar Gautam
+Registration No. : 25BAI1****
+Date: March 30, 2026. 
+
+
+Introduction & Problem Statement
+The Problem
+Digital literacy remains a significant barrier for vulnerable populations, particularly the elderly, who are frequently targeted by phishing and SMS scams. Modern spam filters often operate as "black boxes"—they block messages without explaining why. This project aims to bridge that gap by providing a transparent Risk Score and identifying red flags in suspicious messages.
+
+Why it Matters
+Financial loss due to social engineering is a growing global issue. By creating a tool that assigns a probability-based score, we empower users to make informed decisions rather than relying solely on automated blocks.
+
+
+2. Methodology & Approach
+I followed the standard Machine Learning pipeline to build this solution:
+
+A. Data CollectionI utilized a labeled dataset of SMS and Email messages (Spam vs. Ham).
+    Source: [e.g., UCI Machine Learning Repository / Kaggle SMS Spam Collection].
+    Size: [e.g., 5,574 messages].
+
+B. Feature Engineering ($TF-IDF$)Raw text cannot be processed by machine learning models directly. I implemented Term Frequency-Inverse Document Frequency (TF-IDF) vectorization.
+    Logic: This mathematical approach weighs words that are rare but significant (like "Urgent," "Account," "Suspended") more heavily than common stop-words (like "the," "is," "at").
+    
+C. Model Selection
+I chose the Multinomial Naive Bayes (MNB) algorithm.
+
+    Decision: MNB is highly effective for discrete features (like word counts) and is computationally efficient for text classification, making it ideal for a lightweight, real-time application.
+    
+    
+3. Key Engineering Decisions
+
+Stop-Word Removal: I filtered out common English words to reduce noise in the data, allowing the model to focus on intent-heavy keywords.
+
+Probability vs. Binary Output: Instead of a simple "Safe/Unsafe" label, I extracted the underlying probability from the model to generate a 0-100% Risk Score. This provides more nuance for "borderline" messages.
+
+Risk Thresholds: I set specific thresholds based on testing:
+    < 40%: Low Risk
+    40% - 70%: Caution (Requires human verification)
+    > 70%: High Risk (Likely Phishing)
+    
+    
+4. Challenges Faced
+
+Data Imbalance: Most real-world datasets have far more "Safe" messages than "Phishing" ones. I had to ensure the model was sensitive enough to detect the "Phishing" minority without creating too many false alarms.
+
+Short Texts: SMS messages provide very little context. To solve this, I ensured the $TF-IDF$ vectorizer considered "n-grams" (phrases) rather than just single words.
+
+
+5. What I Learned
+Through this project, I gained hands-on experience in:
+
+    Translating a human-centric problem (scams) into a mathematical classification task.
+    
+    The importance of Data Preprocessing in NLP.
+    
+    How to communicate complex AI outputs (probabilities) into simple, user-friendly scores for non-technical users.
+    
+    
+6. Conclusion
+
+The PhishGuard project successfully demonstrates that fundamental ML techniques like Naive Bayes can be applied to solve critical social issues. While the current model is a prototype, it establishes a solid foundation for a real-time digital literacy tool.
