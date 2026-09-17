@@ -52,6 +52,5 @@ Browser Extension: Porting the logic to a Chrome extension to filter emails in r
 
 Author
 
-Name: Akash Kumar Gautam
+Name: Shaurya Srivastava 
 Course: AI & Machine Learning Fundamentals
-Platform: VITyarthi BYOP Submission
