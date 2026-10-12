@@ -1,4 +1,4 @@
-PROJECT REPORT: PhishGuard
+PROJECT REPORT: digital Guard
 Course: AI & Machine Learning Fundamentals 
 Student Name: Shaurya Srivastava 
 Registration No. : 25MIB10022
@@ -59,4 +59,4 @@ Through this project, I gained hands-on experience in:
     
 6. Conclusion
 
-The PhishGuard project successfully demonstrates that fundamental ML techniques like Naive Bayes can be applied to solve critical social issues. While the current model is a prototype, it establishes a solid foundation for a real-time digital literacy tool.
+The digital Guard project successfully demonstrates that fundamental ML techniques like Naive Bayes can be applied to solve critical social issues. While the current model is a prototype, it establishes a solid foundation for a real-time digital literacy tool.
