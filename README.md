@@ -1,8 +1,8 @@
-PhishGuard: AI-Powered Risk Scoring for Digital LiteracyBYOP Capstone Project
+DigitalGuard: AI-Powered Risk Scoring for Digital LiteracyBYOP Capstone Project
 AI & ML Fundamentals
 
 Project Overview
-PhishGuard is a Natural Language Processing (NLP) tool designed to protect vulnerable populations (such as the elderly or non-tech-savvy users) from phishing and SMS scams. Unlike standard filters that simply block messages, PhishGuard provides a transparency-focused Risk Score, explaining why a message might be dangerous.
+Digital Guard is a Natural Language Processing (NLP) tool designed to protect vulnerable populations (such as the elderly or non-tech-savvy users) from phishing and SMS scams. Unlike standard filters that simply block messages, PhishGuard provides a transparency-focused Risk Score, explaining why a message might be dangerous.
 
 This project addresses the real-world problem of social engineering by using machine learning to identify patterns of urgency, suspicious links, and malicious intent in text.
 
